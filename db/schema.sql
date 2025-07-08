@@ -11,11 +11,11 @@ CREATE TABLE users (
 
 CREATE TABLE movies (
   id SERIAL PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
+  title VARCHAR(50) NOT NULL,
   genre VARCHAR(50) NOT NULL,
   runtime INT, 
   release_year DATE,
-  director VARCHAR(100),
+  director VARCHAR(50),
   movie_poster TEXT,
   plot_summary TEXT
 );
