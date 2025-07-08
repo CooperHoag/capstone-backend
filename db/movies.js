@@ -41,7 +41,7 @@ export async function getMovieById (id) {
 /** @returns the updated movie with the given ID */
 /** @return UNDEFINED if movie with the given ID does not exist */
 export async function updateMovieById (title, genre, runtime, releaseYear, director, moviePoster, plotSummary) {
-const sql = `UPDATE movies SET title=$2, genre=$3, rimtime=$4, release_year=$5, director=$6, movie_poster=$7, plot_summary=$8
+const sql = `UPDATE movies SET title=$2, genre=$3, runtime=$4, release_year=$5, director=$6, movie_poster=$7, plot_summary=$8
 WHERE id=$1
 RETURNING *`;
 
