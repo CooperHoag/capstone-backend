@@ -3,7 +3,7 @@ import db from "#db/clients.js";
 // Creates a new movie rating from a user
 export async function createRating(userId, movieId, rating) {
   const sql = `
-    INSERT INTO user_ratings (user_id, movie_id, ratings)
+    INSERT INTO user_ratings (user_id, movie_id, rating)
     VALUES ($1, $2, $3)
     RETURNING *
   `;
