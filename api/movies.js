@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import requireUser from "#middleware/requireUser.js";
+import requireUser from "#middleware/requireUser";
 import requireBody from "#middleware/requireBody";
 export default router;
 import {
@@ -8,7 +8,6 @@ import {
   deleteMovieById,
   getMovieById,
   updateMovieById,
-  deleteMovieById,
 } from "#db/queries/movies";
 
 router.route("/movies").post(async (req, res) => {
@@ -21,7 +20,7 @@ router.route("/movies").post(async (req, res) => {
 });
 
 router.route("/movies/:id");
-post(requireBody(["id"]), async (req, res) => {
+router.post("/", requireBody(["id"]), async (req, res) => {
   const { id } = req.body;
   const movie = await getMovieById(id);
   if (!id) return res.status(401).send("Invalid movie");
@@ -31,7 +30,7 @@ post(requireBody(["id"]), async (req, res) => {
 });
 
 router.route("/movies");
-post(
+router.post("/",
   requireBody([
     "title, genre, runtime, releaseDate, director, moviePoster, plotSummary",
   ]),

@@ -1,4 +1,4 @@
-import db from "#db/clients.js";
+import db from "#db/client";
 
 // Creates a new movie rating from a user
 export async function createRating(userId, movieId, rating) {

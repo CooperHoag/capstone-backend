@@ -2,12 +2,12 @@ import express from "express";
 const router = express.Router();
 export default router;
 
-import requireUser from "#middleware/requireUser.js";
-import { createRating, getRatingsByUserId } from "#db/queries/ratings.js";
+import requireUser from "#middleware/requireUser";
+import { createRating, getRatingsByUserId } from "#db/queries/ratings";
 
 // POST /ratings
 // creates a new rating for a movie (must be logged in)
-router.post("/").post(requireUser, async (req, res, next) => {
+router.route("/").post(requireUser, async (req, res, next) => {
   try {
     const { movieId, rating } = req.body;
     const newRating = await createRating(req.user.id, movieId, rating);
