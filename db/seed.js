@@ -1,6 +1,6 @@
 import db from "#db/client";
 import { createUser } from "#db/queries/users";
-
+import { createMovie } from "#db/queries/movies";
 await db.connect();
 await seed();
 await db.end();
