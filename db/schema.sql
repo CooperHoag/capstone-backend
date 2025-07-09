@@ -13,6 +13,8 @@ CREATE TABLE movies (
   id SERIAL PRIMARY KEY,
   title VARCHAR(50) NOT NULL,
   genre VARCHAR(50) NOT NULL,
+  subgenre1 VARCHAR(50) NOT NULL,
+  subgenre2 VARCHAR(50) Null
   runtime INT, 
   release_date DATE,
   director VARCHAR(50),
@@ -26,3 +28,16 @@ CREATE TABLE user_ratings (
   movie_id INT REFERENCES movies(id) ON DELETE CASCADE,
   rating INT CHECK (rating >= 1 AND rating <= 5)
 );
+
+CREATE TABLE recommended_page (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(50) NOT NULL,
+  genre VARCHAR(50) NOT NULL,
+  subgenre1 VARCHAR(50) NOT NULL,
+  subgenre2 VARCHAR(50) Null,
+  runtime INT, 
+  release_date DATE,
+  director VARCHAR(50),
+  movie_poster TEXT,
+  plot_summary TEXT
+)
