@@ -14,7 +14,7 @@ CREATE TABLE movies (
   title VARCHAR(50) NOT NULL,
   genre VARCHAR(50) NOT NULL,
   runtime INT, 
-  release_year DATE,
+  release_date DATE,
   director VARCHAR(50),
   movie_poster TEXT,
   plot_summary TEXT
