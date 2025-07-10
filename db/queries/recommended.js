@@ -1,14 +1,10 @@
-const getRecommendations = (allMovies, likedMovies) => {
-  const likedGenres = new Set(likedMovies.map((m) => m.genre));
-  const likedSubgenres = new Set(likedMovies.flatMap((m) => m.subgenres));
-
-  return allMovies.filter((movie) => {
-    const isAlreadyLiked = likedMovies.some((m) => m.id === movie.id);
-    const genreMatch = likedGenres.has(movie.genre);
-    const subgenreMatch = movie.subgenres.some((sub) =>
-      likedSubgenres.has(sub)
-    );
-
-    return !isAlreadyLiked && (genreMatch || subgenreMatch);
-  });
-};
+export async function createRecommendedPage() {
+  sql = `
+INSERT INTO recommended_page (title, genres, runtime, release_date, director, movie_poster, plot_summary)
+SELECT DISTINCT m.title, m.genres, m.runtime, m.release_date, m.director, m.movie_poster, m.plot_summary
+FROM movies m
+WHERE m.id NOT IN (
+  SELECT movie_id FROM user_ratings WHERE user_id = $1
+)
+  `;
+}
