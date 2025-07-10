@@ -1,7 +1,6 @@
 import db from "#db/client";
 import bcrypt from "bcrypt";
 
-// filepath: /Users/hoagie/Desktop/coursework/CapStone/capstone-backend/db/queries/users.js
 export async function createUser(firstName, lastName, email, username, password, bio, profileImageUrl) {
   if (!password) {
     throw new Error("Password is required to create a user.");
