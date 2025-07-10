@@ -7,7 +7,7 @@ await db.end();
 console.log("🌱 Database seeded.");
 
 async function seed() {
-  await createUser("foo", "bar");
+  await createUser("foo", "bar", "foobar@email.com", "FooBarUserName", "password123", "FooBar Bio", "https://example.com/profile.jpg");
   await createMovie(
     "The Notebook",
     "romance",
