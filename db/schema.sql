@@ -17,9 +17,7 @@ CREATE TABLE users (
 CREATE TABLE movies (
   id SERIAL PRIMARY KEY,
   title VARCHAR(50) NOT NULL,
-  genre VARCHAR(50) NOT NULL,
-  subgenre_one VARCHAR(50),
-  subgenre_two VARCHAR(50),
+  genres TEXT NOT NULL,
   runtime INT, 
   release_date DATE,
   director VARCHAR(50),
@@ -37,12 +35,10 @@ CREATE TABLE user_ratings (
 CREATE TABLE recommended_page (
   id SERIAL PRIMARY KEY,
   title VARCHAR(50) NOT NULL,
-  genre VARCHAR(50) NOT NULL,
-  subgenre_one VARCHAR(50),
-  subgenre_two VARCHAR(50),
+  genres TEXT NOT NULL,
   runtime INT, 
   release_date DATE,
   director VARCHAR(50),
   movie_poster TEXT,
   plot_summary TEXT
-)
+);
