@@ -2,14 +2,14 @@ import db from '#db/client';
 
 
 /** @return the movie created with the provided details */ 
-export async function createMovie (title, genre, subgenreOne, subgenreTwo, runtime, releaseDate, director, moviePoster, plotSummary) {
+export async function createMovie (title, genres, runtime, releaseDate, director, moviePoster, plotSummary) {
   const sql = `
-    INSERT INTO movies (title, genre, subgenre_one, subgenre_two, runtime, release_date, director, movie_poster, plot_summary)
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+    INSERT INTO movies (title, genres, runtime, release_date, director, movie_poster, plot_summary)
+    VALUES ($1, $2, $3, $4, $5, $6, $7)
     RETURNING *
   `;
 
-  const { rows: [newMovie] } = await db.query(sql, [title, genre, subgenreOne, subgenreTwo, runtime, releaseDate, director, moviePoster, plotSummary]);
+  const { rows: [newMovie] } = await db.query(sql, [title, genres, runtime, releaseDate, director, moviePoster, plotSummary]);
   console.log(newMovie);
   return newMovie;
 };
@@ -38,12 +38,12 @@ export async function getMovieById (id) {
 
 /** @returns the updated movie with the given ID */
 /** @return UNDEFINED if movie with the given ID does not exist */
-export async function updateMovieById (id, title, genre, subgenreOne, subgenreTwo, runtime, releaseDate, director, moviePoster, plotSummary) {
-const sql = `UPDATE movies SET title=$2, genre=$3, subgenre_one=$4, subgenre_two=$5, runtime=$6, release_date=$7, director=$8, movie_poster=$9, plot_summary=$10
+export async function updateMovieById (id, title, genres, runtime, releaseDate, director, moviePoster, plotSummary) {
+const sql = `UPDATE movies SET title=$2, genres=#3, runtime=$4, release_date=$5, director=$6, movie_poster=$7, plot_summary=$8
 WHERE id=$1
 RETURNING *`;
 
-const { rows: [updatedMovie] } = await db.query(sql, [id, title, genre, subgenreOne, subgenreTwo, runtime, releaseDate, director, moviePoster, plotSummary]);
+const { rows: [updatedMovie] } = await db.query(sql, [id, title, genres, runtime, releaseDate, director, moviePoster, plotSummary]);
 console.log(updatedMovie);
 return updatedMovie || undefined;
 };
