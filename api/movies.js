@@ -10,7 +10,7 @@ import {
   updateMovieById,
 } from "#db/queries/movies";
 
-router.route("/movies").post(async (req, res) => {
+router.route("/movies").get(async (req, res) => {
   try {
     const movies = await getAllMovies(); // Call the function correctly
     res.status(200).json(movies); // Send back the movie list
@@ -20,7 +20,7 @@ router.route("/movies").post(async (req, res) => {
 });
 
 router.route("/movies/:id");
-router.post("/", requireBody(["id"]), async (req, res) => {
+router.get("/", requireBody(["id"]), async (req, res) => {
   const { id } = req.body;
   const movie = await getMovieById(id);
   if (!id) return res.status(401).send("Invalid movie");
@@ -30,7 +30,8 @@ router.post("/", requireBody(["id"]), async (req, res) => {
 });
 
 router.route("/movies");
-router.post("/",
+router.post(
+  "/",
   requireBody([
     "title, genre, runtime, releaseDate, director, moviePoster, plotSummary",
   ]),
