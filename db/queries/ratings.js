@@ -7,11 +7,11 @@ export async function createRating(userId, movieId, rating) {
     VALUES ($1, $2, $3)
     RETURNING *
   `;
-  const { rows: [newRating]} = await db.query(sql, [userId, movieId, rating]);
+  const { rows: [newRating] } = await db.query(sql, [userId, movieId, rating]);
   return newRating;
 }
 
-// Gets all movies this user has rated which will also show their rating
+// Gets all movies this user has rated, including their rating
 export async function getRatingsByUserId(userId) {
   const sql = `
     SELECT movies.*, user_ratings.rating
@@ -21,4 +21,15 @@ export async function getRatingsByUserId(userId) {
   `;
   const { rows: ratedMovies } = await db.query(sql, [userId]);
   return ratedMovies;
+}
+
+// Deletes a rating only if it belongs to the user
+export async function deleteRatingByIdForUser(userId, ratingId) {
+  const sql = `
+    DELETE FROM user_ratings
+    WHERE id = $1 AND user_id = $2
+    RETURNING *
+  `;
+  const { rows: [deletedRating] } = await db.query(sql, [ratingId, userId]);
+  return deletedRating;
 }
