@@ -10,7 +10,7 @@ async function seed() {
   await createUser("foo", "bar", "foobar@email.com", "FooBarUserName", "password123", "FooBar Bio", "https://example.com/profile.jpg");
 
 
-  await createMovie (
+  await createMovie(
     "The Notebook",
     "Romance",
     123,
@@ -21,7 +21,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "Batman Begins",
     "Action",
     140,
@@ -32,7 +32,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "All about Eve",
     "Action",
     138,
@@ -43,7 +43,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "Jaws",
     "Horror",
     124,
@@ -54,7 +54,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "A Fish Called Wanda",
     "Comedy",
     108,
@@ -65,7 +65,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "Moon",
     "Sci-Fi",
     97,
@@ -76,7 +76,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "Galaxy Quest",
     "Sci-Fi", 
     102,
@@ -87,7 +87,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "Total Recall",
     "Action",
     113,
@@ -97,7 +97,7 @@ async function seed() {
     "When a man goes in to have virtual vacation memories of the planet Mars implanted in his mind, an unexpected and harrowing series of events forces him to go to the planet for real - or is he?"
   );
 
-  await createMovie (
+  await createMovie(
     "Contact",
     "Drama",
     150,
@@ -107,7 +107,7 @@ async function seed() {
     "Dr. Ellie Arroway, after years of searching, finds conclusive radio proof of extraterrestrial intelligence, sending plans for a mysterious machine."
   );
 
-  await createMovie (
+  await createMovie(
     "Eternal Sunshine of the Spotless Mind",
     "Drama",
     108,
@@ -117,7 +117,7 @@ async function seed() {
     "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories forever."
   );
 
-  await createMovie (
+  await createMovie(
     "Close Encounters of the Third Kind",
     "Drama",
     138,
@@ -127,7 +127,7 @@ async function seed() {
     "An Indiana electric lineman finds his quiet and ordinary daily life turned upside down after a close encounter with a UFO, spurring him to an obsessed cross-country quest for answers as a momentous event approaches."
   );
 
-  await createMovie (
+  await createMovie(
     "Arrival",
     "Drama",
     166,
@@ -137,7 +137,7 @@ async function seed() {
     "Linguist Louise Banks leads a team of investigators when gigantic spaceships touch down around the world. As nations teeter on the verge of global war, Banks and her crew must find a way to communicate with the extraterrestrial visitors."
   );
 
-  await createMovie (
+  await createMovie(
     "Ex Machina",
     "Drama",
     108,
@@ -147,7 +147,7 @@ async function seed() {
     "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I."
   );
 
-  await createMovie (
+  await createMovie(
     "WALL-E",
     "Animation",
     98,
@@ -158,7 +158,7 @@ async function seed() {
   );
 
 
-  await createMovie (
+  await createMovie(
     "E.T.",
     "Sci-Fi",
     115,
@@ -168,7 +168,7 @@ async function seed() {
     "A troubled child summons the courage to help a friendly alien escape from Earth and return to his home planet."
   );
 
-  await createMovie (
+  await createMovie(
     "12 Monkeys",
     "Sci-Fi",
     129,
@@ -178,7 +178,7 @@ async function seed() {
     "In a future world devastated by disease, a convict is sent back in time to gather information about the man-made virus that wiped out most of the human population on the planet."
   );
 
-  await createMovie (
+  await createMovie(
     "District 9",
     "Sci-Fi",
     112,
@@ -188,7 +188,7 @@ async function seed() {
     "In a future Earth in which aliens are isolated in a remote ghetto, a government agent finds himself banished there."
   );
 
-  await createMovie (
+  await createMovie(
     "Children of Men",
     "Drama",
     109,
@@ -198,7 +198,7 @@ async function seed() {
     "In 2027, in a chaotic world in which women have somehow become infertile, a former activist agrees to help transport a miraculously pregnant woman to a sanctuary at sea."
   );
 
-  await createMovie (
+  await createMovie(
     "Akira",
     "Animation",
     124,
@@ -208,7 +208,7 @@ async function seed() {
     "A secret military project endangers Neo-Tokyo when it turns a teenage biker gang member into a rampaging psychic psychopath who can only be stopped by his best friend."
   );
 
-  await createMovie (
+  await createMovie(
     "Alien",
     "Sci-Fi",
     117,
