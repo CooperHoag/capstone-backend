@@ -3,11 +3,14 @@ const router = express.Router();
 export default router;
 
 import requireUser from "#middleware/requireUser";
-import { createRating, getRatingsByUserId } from "#db/queries/ratings";
+import {
+  createRating,
+  getRatingsByUserId,
+  deleteRatingByIdForUser,
+} from "#db/queries/ratings";
 
-// POST /ratings
-// creates a new rating for a movie (must be logged in)
-router.route("/").post(requireUser, async (req, res, next) => {
+// POST /ratings - Create new thumbs up/down for a movie
+router.post("/", requireUser, async (req, res, next) => {
   try {
     const { movieId, rating } = req.body;
     const newRating = await createRating(req.user.id, movieId, rating);
@@ -17,9 +20,8 @@ router.route("/").post(requireUser, async (req, res, next) => {
   }
 });
 
-// GET /ratings/me
-// Gets all movie ratings for the logged-in user
-router.route("/me").get(requireUser, async (req, res, next) => {
+// GET /ratings/me - Get logged-in user's rated movies
+router.get("/me", requireUser, async (req, res, next) => {
   try {
     const ratings = await getRatingsByUserId(req.user.id);
     res.send(ratings);
@@ -28,14 +30,15 @@ router.route("/me").get(requireUser, async (req, res, next) => {
   }
 });
 
-router.delete("/ratings/:id", async (req, res) => {
+// DELETE /ratings/:id - Only allow user to delete their own rating
+router.delete("/:id", requireUser, async (req, res) => {
   const { id } = req.params;
 
   try {
-    const deleted = await deleteRatingsId(id);
+    const deleted = await deleteRatingByIdForUser(req.user.id, id);
 
     if (!deleted) {
-      return res.status(404).json({ error: "Rating not found" });
+      return res.status(404).json({ error: "Rating not found or not yours to delete" });
     }
 
     res.status(200).json({ message: "Rating deleted successfully" });
@@ -43,3 +46,4 @@ router.delete("/ratings/:id", async (req, res) => {
     res.status(500).json({ error: "Failed to delete rating" });
   }
 });
+

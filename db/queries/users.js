@@ -1,18 +1,21 @@
 import db from "#db/client";
 import bcrypt from "bcrypt";
 
-export async function createUser(username, password) {
+export async function createUser(firstName, lastName, email, username, password, bio, profileImageUrl) {
+  if (!password) {
+    throw new Error("Password is required to create a user.");
+  }
   const sql = `
   INSERT INTO users
-    (username, password)
+    (first_name, last_name, email, username, password, bio, profile_image_url)
   VALUES
-    ($1, $2)
+    ($1, $2, $3, $4, $5, $6, $7)
   RETURNING *
   `;
   const hashedPassword = await bcrypt.hash(password, 10);
   const {
     rows: [user],
-  } = await db.query(sql, [username, hashedPassword]);
+  } = await db.query(sql, [firstName, lastName, email, username, hashedPassword, bio, profileImageUrl]);
   return user;
 }
 
