@@ -1,7 +1,8 @@
-DROP TABLE IF EXISTS user_ratings;
-DROP TABLE IF EXISTS movies;
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS recommended_page;
+DROP TABLE IF EXISTS watchlist CASCADE;
+DROP TABLE IF EXISTS user_ratings CASCADE;
+DROP TABLE IF EXISTS movies CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS recommended_page CASCADE;
 
 CREATE TABLE users (
   id serial PRIMARY KEY,
@@ -42,3 +43,10 @@ CREATE TABLE recommended_page (
   movie_poster TEXT,
   plot_summary TEXT
 );
+
+CREATE TABLE watchlist (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id) ON DELETE CASCADE,
+  movie_id INT REFERENCES movies(id) ON DELETE CASCADE,
+  UNIQUE (user_id, movie_id)
+)

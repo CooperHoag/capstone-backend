@@ -9,6 +9,7 @@ import cors from "cors";
 import morgan from "morgan";
 import ratingsRouter from "#api/ratings";
 import moviesRouter from "#api/movies";
+import watchlistRouter from "#api/watchlist"
 
 app.use(cors({ origin: process.env.CORS_ORIGIN ?? /localhost/ }));
 
@@ -24,6 +25,7 @@ app.get("/", (req, res) => res.send("Hello, World!"));
 app.use("/users", usersRouter);
 app.use("/ratings", ratingsRouter);
 app.use("/movies", moviesRouter);
+app.use("/watchlist", watchlistRouter);
 
 app.use(handlePostgresErrors);
 app.use((err, req, res, next) => {
