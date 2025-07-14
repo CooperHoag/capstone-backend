@@ -1,6 +1,6 @@
 import db from "#db"; // Assuming you have a db module like pg or knex
 
-export async function createRecommendedPageOne(userId) {
+export async function createRecommendedPageNoRepeats(userId) {
   const sql = `
     INSERT INTO recommended_page (title, genres, runtime, release_date, director, movie_poster, plot_summary)
     SELECT DISTINCT m.title, m.genres, m.runtime, m.release_date, m.director, m.movie_poster, m.plot_summary
@@ -13,7 +13,7 @@ export async function createRecommendedPageOne(userId) {
   await db.query(sql, [userId]);
 }
 
-export async function createRecommendedPageTwo(userId) {
+export async function createRecommendedAlgorithm(userId) {
   const sql = `
     WITH user_favorites AS (
       SELECT m.*
