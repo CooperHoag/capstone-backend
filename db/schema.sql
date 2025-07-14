@@ -49,4 +49,4 @@ CREATE TABLE watchlist (
   user_id INT REFERENCES users(id) ON DELETE CASCADE,
   movie_id INT REFERENCES movies(id) ON DELETE CASCADE,
   UNIQUE (user_id, movie_id)
-)
+);
