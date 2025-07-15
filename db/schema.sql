@@ -50,3 +50,17 @@ CREATE TABLE watchlist (
   movie_id INT REFERENCES movies(id) ON DELETE CASCADE,
   UNIQUE (user_id, movie_id)
 );
+
+CREATE TABLE genres (
+  id SERIAL PRIMARY KEY,
+  genre_label TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE user_genre_selections (
+  user_id INT REFERENCES users(id),
+  genre_id INT REFERENCES genres(id),
+  PRIMARY KEY (user_id, genre_id)
+);
+
+INSERT INTO genres (genre_label) VALUES
+('Action'), ('Horror'), ('Romance'), ('Sci-Fi'), ('Drama'), ('Comedy');
