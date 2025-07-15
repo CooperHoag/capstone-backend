@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS reviews CASCADE;
 DROP TABLE IF EXISTS watchlist CASCADE;
 DROP TABLE IF EXISTS user_ratings CASCADE;
 DROP TABLE IF EXISTS movies CASCADE;
@@ -64,3 +65,11 @@ CREATE TABLE user_genre_selections (
 
 INSERT INTO genres (genre_label) VALUES
 ('Action'), ('Horror'), ('Romance'), ('Sci-Fi'), ('Drama'), ('Comedy');
+
+CREATE TABLE reviews (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id) ON DELETE CASCADE,
+  movie_id INT REFERENCES movies(id) ON DELETE CASCADE,
+  content TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
