@@ -7,7 +7,15 @@ await db.end();
 console.log("🌱 Database seeded.");
 
 async function seed() {
-  await createUser("foo", "bar", "foobar@email.com", "FooBarUserName", "password123", "FooBar Bio", "https://example.com/profile.jpg");
+  await createUser(
+    "foo",
+    "bar",
+    "foobar@email.com",
+    "FooBarUserName",
+    "password123",
+    "FooBar Bio",
+    "https://example.com/profile.jpg"
+  );
 
   await createMovie(
     "The Notebook",
@@ -19,7 +27,6 @@ async function seed() {
     "An epic love story centered around an older man who reads aloud to a woman with Alzheimer's. From a faded notebook, the old man's words bring to life the story about a couple who is separated by World War II, and is then passionately reunited, seven years later, after they have taken different paths."
   );
 
-
   await createMovie(
     "Batman Begins",
     "Action",
@@ -29,7 +36,6 @@ async function seed() {
     "https://th.bing.com/th/id/OIP.N3ovIsICeEFj3oXwNlxcXAHaEK?w=329&h=185&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
     "After witnessing his parents' death, billionaire Bruce Wayne learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city."
   );
-
 
   await createMovie(
     "All about Eve",
@@ -41,7 +47,6 @@ async function seed() {
     "A seemingly timid but secretly ruthless ingénue insinuates herself into the lives of an aging Broadway star and her circle of theater friends."
   );
 
-
   await createMovie(
     "Jaws",
     "Horror",
@@ -51,7 +56,6 @@ async function seed() {
     "https://th.bing.com/th/id/OIP.CinVdved0tdx-B3ETRdssQAAAA?w=330&h=167&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
     "When a massive killer shark unleashes chaos on a beach community off Long Island, it's up to the local police chief, a marine biologist, and an old seafarer to hunt the beast down."
   );
-
 
   await createMovie(
     "A Fish Called Wanda",
@@ -63,7 +67,6 @@ async function seed() {
     "A Fish Called Wanda is a British-American comedy about a group of eccentric criminals who double-cross each other in pursuit of stolen diamonds, leading to a series of absurd and hilarious mishaps. The film centers on the seductive Wanda, who manipulates everyone—including a bumbling barrister—to get what she wants."
   );
 
-
   await createMovie(
     "Moon",
     "Sci-Fi",
@@ -74,17 +77,15 @@ async function seed() {
     "Astronaut Sam Bell has a quintessentially personal encounter toward the end of his three-year stint on the Moon, where he, working alongside his computer, GERTY, sends back to Earth parcels of a resource that has helped diminish our planet's power problems."
   );
 
-
   await createMovie(
     "Galaxy Quest",
-    "Sci-Fi", 
+    "Sci-Fi",
     102,
     "1999-12-23",
     "Dean Parisot",
     "https://th.bing.com/th/id/OSK.y4MUaO9222YR_OCwwV84-3KeIVWso47QqjN6jTgTk7U?w=120&h=168&c=7&rs=1&qlt=80&o=6&pid=SANGAM",
     "The alumni cast of a space opera television series have to play their roles as the real thing when an alien race needs their help. However, they also have to defend both Earth and the alien race from a reptilian warlord."
   );
-
 
   await createMovie(
     "Total Recall",
@@ -156,7 +157,6 @@ async function seed() {
     "A robot who is responsible for cleaning a waste-covered Earth meets another robot and falls in love with her. Together, they set out on a journey that will alter the fate of mankind."
   );
 
-
   await createMovie(
     "E.T.",
     "Sci-Fi",
@@ -217,5 +217,3 @@ async function seed() {
     "After investigating a mysterious transmission of unknown origin, the crew of a commercial spacecraft encounters a deadly lifeform."
   );
 }
-
-
