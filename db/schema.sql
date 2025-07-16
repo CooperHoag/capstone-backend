@@ -51,7 +51,8 @@ CREATE TABLE user_ratings (
   id SERIAL PRIMARY KEY,
   user_id INT REFERENCES users(id) ON DELETE CASCADE,
   movie_id INT REFERENCES movies(id) ON DELETE CASCADE,
-  rating BOOLEAN
+  rating BOOLEAN NOT NULL,
+  UNIQUE (user_id, movie_id)
 );
 
 
@@ -73,5 +74,5 @@ CREATE TABLE user_genre_selections (
   PRIMARY KEY (user_id, genre_id)
 );
 
-
-
+INSERT INTO genres (genre_label) VALUES
+('Action'), ('Horror'), ('Romance'), ('Sci-Fi'), ('Drama'), ('Comedy');
