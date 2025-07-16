@@ -5,7 +5,9 @@ export async function createRating(userId, movieId, rating) {
   const sql = `
     INSERT INTO user_ratings (user_id, movie_id, rating)
     VALUES ($1, $2, $3)
-    RETURNING *
+    ON CONFLICT (user_id, movie_id)
+    DO UPDATE SET rating = EXCLUDED.rating
+    RETURNING *;
   `;
   const { rows: [newRating] } = await db.query(sql, [userId, movieId, rating]);
   return newRating;
@@ -14,7 +16,7 @@ export async function createRating(userId, movieId, rating) {
 // Gets all movies this user has rated, including their rating
 export async function getRatingsByUserId(userId) {
   const sql = `
-    SELECT movies.*, user_ratings.rating
+    SELECT movies.*, user_ratings.rating, user_ratings.id AS rating_id
     FROM user_ratings
     JOIN movies ON user_ratings.movie_id = movies.id
     WHERE user_ratings.user_id = $1
