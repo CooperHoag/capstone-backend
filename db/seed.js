@@ -233,7 +233,7 @@ async function seed() {
     146,
     "1980-05-23",
     "Stanley Kubrick",
-    "https://image.tmdb.org/t/p/w500/9PbtCo6APZ2bG1yIA1bYH5p5VdP.jpg",
+    "https://th.bing.com/th/id/OSK.OdE5o6EwBsc2jvGFdbbeIbJ4qSydmBGFcJtReGxG-oM?w=120&h=168&c=7&rs=1&qlt=80&o=6&pid=SANGAM",
     "A family heads to an isolated hotel where an evil spiritual presence influences the father into violence, while his psychic son sees horrific forebodings."
   );
   
@@ -303,7 +303,7 @@ async function seed() {
     100,
     "2003-05-30",
     "Andrew Stanton",
-    "https://image.tmdb.org/t/p/w500/2zG1HYkdB8Oa7wy4JwnrAvbUqFv.jpg",
+    "https://filmartgallery.com/cdn/shop/files/Finding-Nemo-Vintage-Movie-Poster-Original.jpg?v=1738908323",
     "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home."
   );
   
@@ -324,7 +324,7 @@ async function seed() {
     132,
     "1988-07-15",
     "John McTiernan",
-    "https://image.tmdb.org/t/p/w500/1nt3A4ISDdm8P9aFWgUZUMtB8hl.jpg",
+    "https://filmartgallery.com/cdn/shop/files/Die-Hard-Vintage-Movie-Poster-Original_b2d11d4a_600x.jpg?v=1741144345",
     "An NYPD officer tries to save his wife and others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles."
   );
 
@@ -365,7 +365,7 @@ async function seed() {
     91,
     "1984-11-09",
     "Wes Craven",
-    "https://image.tmdb.org/t/p/w500/o2QAjS43A6yPzNYeLk8C7LaUEQK.jpg",
+    "https://i.etsystatic.com/13669063/r/il/aa85f1/2946392658/il_1588xN.2946392658_fujz.jpg",
     "Teenagers fall prey to Freddy Krueger, a disfigured midnight mangler who preys on the teenagers in their dreams—which, in turn, kills them in reality."
   );
 
@@ -386,7 +386,7 @@ async function seed() {
     129,
     "2005-11-11",
     "Joe Wright",
-    "https://image.tmdb.org/t/p/w500/1Hj8XgVOcMaTdrC2Eb6qG8M2FDr.jpg",
+    "https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/2874400/5938255/MOVEG9921__14814.1679584688.jpg?c=2",
     "Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with a woman beneath his class."
   );
 
@@ -396,7 +396,7 @@ async function seed() {
     124,
     "1999-05-28",
     "Roger Michell",
-    "https://image.tmdb.org/t/p/w500/2iB9gTufSPhvZ6tEFKy9GoN0B2P.jpg",
+    "https://i.ebayimg.com/images/g/ZYYAAOSwAadfiBH1/s-l500.jpg",
     "The life of a simple bookshop owner changes when he meets the most famous film star in the world."
   );
 
@@ -407,7 +407,7 @@ async function seed() {
     101,
     "1993-02-12",
     "Harold Ramis",
-    "https://image.tmdb.org/t/p/w500/4v1pEPuPnhs5gRyMaA6mtrz7b3y.jpg",
+    "https://i.ebayimg.com/images/g/SNgAAOSwWYtkVDVT/s-l1600.webp",
     "A weatherman finds himself inexplicably living the same day over and over again."
   );
 
@@ -470,7 +470,7 @@ async function seed() {
     117,
     "1982-06-25",
     "Ridley Scott",
-    "https://image.tmdb.org/t/p/w500/v8VhC3TU5p4A2M3XhZkT3Jv1a6F.jpg",
+    "https://i.ebayimg.com/images/g/iAUAAOSwR29ZJgpK/s-l1600.webp",
     "A blade runner must pursue and terminate four replicants who stole a ship in space and have returned to Earth to find their creator."
   );
 
@@ -480,7 +480,7 @@ async function seed() {
     169,
     "2014-11-07",
     "Christopher Nolan",
-    "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+    "https://i.ebayimg.com/images/g/wbgAAOSwpTBkojnL/s-l1600.webp",
     "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
   );
 
@@ -501,7 +501,7 @@ async function seed() {
     141,
     "2002-12-25",
     "Steven Spielberg",
-    "https://image.tmdb.org/t/p/w500/wHJKqTN8LCC6f7K5gGd5WEx3I5V.jpg",
+    "https://i.ebayimg.com/images/g/aSQAAOSwro9kgCGA/s-l1600.webp",
     "The true story of Frank Abagnale Jr., who successfully conned millions of dollars' worth of checks as a Pan Am pilot, doctor, and legal prosecutor before his 19th birthday."
   );
 
@@ -522,7 +522,7 @@ async function seed() {
     99,
     "2004-04-09",
     "Edgar Wright",
-    "https://image.tmdb.org/t/p/w500/d9jZ7T1g67eU8yLQG4zDkaQxjXF.jpg",
+    "https://mondoshop.com/cdn/shop/products/Dombrowski_SOTD_Sm.jpg?v=1662520144&width=570",
     "A man's uneventful life is disrupted by the zombie apocalypse as he tries to win back his ex-girlfriend."
   );
 
@@ -532,7 +532,7 @@ async function seed() {
     96,
     "2009-05-29",
     "Pete Docter, Bob Peterson",
-    "https://image.tmdb.org/t/p/w500/9kQWy5QZX93JcFGc1JbEiwHG9S2.jpg",
+    "https://i.ebayimg.com/images/g/OLgAAOSwe-phZOzF/s-l1600.webp",
     "Seventy-eight-year-old Carl Fredricksen travels to Paradise Falls in his house equipped with balloons, inadvertently taking a young stowaway."
   );
 
@@ -543,7 +543,7 @@ async function seed() {
     143,
     "2012-11-09",
     "Sam Mendes",
-    "https://image.tmdb.org/t/p/w500/izrHg2UzxG3YXtbOS0UtzYv5bCk.jpg",
+    "https://i.ebayimg.com/images/g/h1oAAOSw0wxiesYq/s-l1600.webp",
     "Bond's loyalty to M is tested when her past comes back to haunt her. As MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost."
   );
 
@@ -563,7 +563,7 @@ async function seed() {
     155,
     "2000-05-05",
     "Ridley Scott",
-    "https://image.tmdb.org/t/p/w500/pRn3TJHbAqCAO7V1Ggfw2I2id3U.jpg",
+    "https://i.ebayimg.com/images/g/dpkAAOSw~llgqj0q/s-l1600.webp",
     "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery."
   );
 
@@ -574,7 +574,7 @@ async function seed() {
     109,
     "1960-09-08",
     "Alfred Hitchcock",
-    "https://image.tmdb.org/t/p/w500/5gJkVIVU7FDp7AfRAbPSvvdbQx2.jpg",
+    "https://i.ebayimg.com/images/g/vUAAAOSwtURhQP1p/s-l1600.webp",
     "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother."
   );
 
@@ -584,7 +584,7 @@ async function seed() {
     94,
     "2014-05-22",
     "Jennifer Kent",
-    "https://image.tmdb.org/t/p/w500/kb6Ju1GnV0OsS1aFqHn1bZbKsy2.jpg",
+    "https://i.ebayimg.com/images/g/54cAAOSwV0RXp4Ml/s-l1600.webp",
     "A single mother and her child fall into a deep well of paranoia when an eerie children's book titled 'Mister Babadook' manifests in their home."
   );
 
@@ -594,7 +594,7 @@ async function seed() {
     100,
     "2015-03-13",
     "David Robert Mitchell",
-    "https://image.tmdb.org/t/p/w500/wkixs3bAIlNh2b3QoyAoXoAqW70.jpg",
+    "https://w.notrecinema.com/w20/images/wallpapers/vign/jaquette_658987.jpg",
     "A young woman is followed by an unknown supernatural force after a sexual encounter."
   );
 
@@ -605,7 +605,7 @@ async function seed() {
     101,
     "1995-01-27",
     "Richard Linklater",
-    "https://image.tmdb.org/t/p/w500/6a5bSS1z4WR6jtA6A4jtwp3UPKM.jpg",
+    "https://i.ebayimg.com/images/g/9PYAAOSwGXxm43Um/s-l1600.webp",
     "A young man and woman meet on a train in Europe and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together."
   );
 
@@ -626,7 +626,7 @@ async function seed() {
     100,
     "2014-03-28",
     "Wes Anderson",
-    "https://image.tmdb.org/t/p/w500/nX5XotM9yprCKarRH4fzOq1VM1J.jpg",
+    "https://i.ebayimg.com/images/g/zj0AAOSwOOlgnIYm/s-l1600.webp",
     "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge."
   );
 
@@ -636,7 +636,7 @@ async function seed() {
     98,
     "2008-07-25",
     "Adam McKay",
-    "https://image.tmdb.org/t/p/w500/8Rk6C6gP7p5jTvk0CWZ4j41A4Uu.jpg",
+    "https://i.ebayimg.com/images/g/ZFkAAOSwfCVkxiu8/s-l1600.webp",
     "Two aimless middle-aged losers still living at home are forced against their will to become roommates when their parents marry."
   );
 
@@ -657,7 +657,7 @@ async function seed() {
     100,
     "2009-02-06",
     "Henry Selick",
-    "https://image.tmdb.org/t/p/w500/4XBBXOQDZ8gEAvnwhh8o6KCbe2M.jpg",
+    "https://i.ebayimg.com/images/g/6YIAAOSwpfxhEw-R/s-l1600.webp",
     "An adventurous girl finds another world that is a strangely idealized version of her frustrating home, but it has sinister secrets."
   );
 
@@ -668,7 +668,7 @@ async function seed() {
     102,
     "2000-10-27",
     "Darren Aronofsky",
-    "https://image.tmdb.org/t/p/w500/8iSywUq6qLhL8Zq7B6KEtHeQ7eS.jpg",
+    "https://i.ebayimg.com/images/g/ZXgAAOSwn7JYCo3w/s-l1600.webp",
     "The drug-induced utopias of four Coney Island people are shattered when their addictions run deep."
   );
 
@@ -689,7 +689,7 @@ async function seed() {
     145,
     "2002-06-21",
     "Steven Spielberg",
-    "https://image.tmdb.org/t/p/w500/pQAaF1J4IH5Fvgoyzb2uQffHLL7.jpg",
+    "https://i.ebayimg.com/images/g/L4oAAOSwAltdeMFe/s-l1600.webp",
     "In a future where a special police unit can arrest murderers before they commit their crimes, an officer from that unit is himself accused of a future murder."
   );
 
@@ -710,7 +710,7 @@ async function seed() {
     154,
     "1997-12-25",
     "Quentin Tarantino",
-    "https://image.tmdb.org/t/p/w500/cMSqT8b1bFqDDr9lW2Xw45CpQhT.jpg",
+    "https://i.ebayimg.com/images/g/itwAAOSwSZJnaLKI/s-l1600.webp",
     "A flight attendant becomes a key figure in a plot between a smuggler, an aging bail bondsman, and a handful of inept criminals."
   );
 
@@ -720,7 +720,7 @@ async function seed() {
     95,
     "2015-06-19",
     "Pete Docter",
-    "https://image.tmdb.org/t/p/w500/aAmfIX3TT40zUHGcCKrlOZRKC7u.jpg",
+    "https://i.ebayimg.com/images/g/wtUAAOSwtqtk4Ytr/s-l1600.webp",
     "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school."
   );
 
@@ -730,7 +730,7 @@ async function seed() {
     117,
     "1998-03-06",
     "Joel Coen",
-    "https://image.tmdb.org/t/p/w500/5wF6bKVoNV4LR0QJduI8bep4V5V.jpg",
+    "https://i.ebayimg.com/images/g/S58AAOSwOyJX31n6/s-l1600.webp",
     "Jeff 'The Dude' Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies for help."
   );
 
@@ -750,7 +750,7 @@ async function seed() {
     118,
     "2006-10-11",
     "Guillermo del Toro",
-    "https://image.tmdb.org/t/p/w500/svYzz7d6vkb1H6cYc6GStS5lL2L.jpg",
+    "https://i.ebayimg.com/images/g/6cMAAOSweAVlysnT/s-l1600.webp",
     "In the Falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world."
   );
 
