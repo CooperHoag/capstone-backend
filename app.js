@@ -17,11 +17,11 @@ app.use(cors({ origin: ["https://leisurebuddy.netlify.app"]}));
 app.use(morgan("dev"));
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true }));
 
-app.use(getUserFromToken);
+// app.use(getUserFromToken);
 
-app.get("/", (req, res) => res.send("Hello, World!"));
+// app.get("/", (req, res) => res.send("Hello, World!"));
 
 app.use("/users", usersRouter);
 app.use("/ratings", ratingsRouter);

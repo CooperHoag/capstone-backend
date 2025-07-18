@@ -5,6 +5,7 @@
     "#*": "./*.js"
   },
   "scripts": {
+    "start:prod": "node server.js",
     "start": "node --env-file=.env server.js",
     "dev": "node --watch --env-file=.env server.js",
     "test": "vitest",
