@@ -12,7 +12,7 @@ import moviesRouter from "#api/movies";
 import watchlistRouter from "#api/watchlist"
 import reviewsRouter from "#api/reviews";
 
-app.use(cors({ origin: process.env.CORS_ORIGIN ?? /localhost/ }));
+app.use(cors({ origin: ["https://leisurebuddy.netlify.app"]}));
 
 app.use(morgan("dev"));
 
