@@ -55,9 +55,12 @@ router
   .route("/me")
   .get(requireUser, async (req, res, next) => {
     try {
+      console.log(req.user);
       const user = await getUserById(req.user.id);
       res.send({ id: user.id, first_name: user.first_name });
     } catch (error) {
+      console.log(error);
+    }
       next(error);
     }
-  });
+  );
